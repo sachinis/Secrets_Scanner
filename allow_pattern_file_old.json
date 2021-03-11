@@ -1,0 +1,28 @@
+{
+    "Allow_Dir": ["../src/test1/*",
+      "../src/test2/*",
+      "../src/test3/*",
+      "../src/test4/*",
+      "../.gitlab/*"
+    ],
+    "Allow_File": ["../secrets-scanner/block_pattern_file.json",
+      "../secrets-scanner/allow_pattern_file.json",
+      "../secrets-scanner/README.md",
+      "../secrets-scanner/SecretsScanner.py",
+      "../secrets-scanner/__main__.py",
+      "../src/test.php"
+    ],
+    "Allow_File_Pattern": [
+      ".*_test\\.go"
+    ],
+    "Allow_String_Pattern": ["AKIAIOSFODNN7EXAMPLE",
+      "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+      "datto[0-9]{3}",
+      "secrets-scanner"
+    ],
+    "Allow_File_Line": ["../src/1.php:$~100",
+      "../src/2.php:$~10",
+      "../src/3.php:$~16",
+      "../dev/test.php:$~16"
+    ]
+}
