@@ -10,7 +10,7 @@ The code in 'secrets-scanner' repo was written using python v3.8.5 but it should
 
 **Suggested usage**
 
-The 'secrets-scanner' package is intended to be run as a job within the security stage in your pipeline. This job should ideally be run when developers push code to their branch. The passing of this job must be a pre-requsite for MR approval. If false-positives are found in the scan results of this job, then the false positives must be removed by including an appropriate allowed pattern.
+The 'secrets-scanner' package is intended to be run as a job within a security stage in your pipeline. This job should ideally be run when developers push code to their branch. The passing of this job must be a pre-requsite for MR approval. If false-positives are found in the scan results of this job, then the false positives must be removed by including an appropriate allowed pattern.
 
 **Script usage**
 
@@ -32,7 +32,7 @@ ii) Including command-line arguments; you can use relative paths or absolute pat
 
 iii) With default command-line arguments (source_dir = '../', apattern = 'secrets-scanner/allow_pattern_file.json', bpattern = 'secrets-scanner/block_pattern_file.json') :
 
-Create a directory named 'security' in the root directory of your product repo. Navigate to the 'security' directory and clone this repo (secrets-scanner repo). Replace the 'allow_pattern_file.json' in the 'security' directory with a custom one and run the following command from the 'security' directory:
+Clone this repo inside a directory. Replace the 'allow_pattern_file.json' with a custom one and run the following command from the directory where you cloned this repo:
 
 `python3 secrets-scanner`
 
