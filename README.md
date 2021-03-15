@@ -15,6 +15,7 @@ The 'secrets-scanner' package is intended to be run as a job within a security s
 **Script usage**
 
 1. Clone the 'Secrets_Scanner' python package.
+2. Update the 'allow_pattern_file.json' to include your custom whitelisted patterns. Ignore the 'allow_pattern_file_old.json' file. If you dont update the allow_pattern_file.json then you will get a lot of false positives. Include absolute paths of file and directories in the pattern file. 
 
 2. Commands : 
 
